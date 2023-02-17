@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en-US">
+<html>
+	
+	<head>
+		
+		<meta charset="utf-8">
+		<title>Lesson 5 | Microprocessors</title>
+		
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,shrink-to-fit=no,minimal-ui"/>
+
+        <link rel="stylesheet" href="./css/index.css">
+
+        <link rel="stylesheet" href="./css/lesson5.css">
+        <script type="text/javascript" src="./js/lesson5.js"></script>
+
+    </head>
+
+    <body>
+
+        <overlay id="overlay">
+            <box>
+                <spark>
+                    <img src="./img/modal-sparks-purple.png">
+                </spark>
+                <bar>
+                    <close onclick="try_again_buttom();"><img src="./img/menu_exit_button.svg"></close>
+                </bar>
+                <header>
+                    Congratulations! 
+                </header>
+                <message>
+                    You&#8217ve successfully selected the ingredients of a microprocessor.
+                    <button onclick="try_again_buttom();">Try it again <img src="./img/arrow-white-right.svg"></button>
+                </message>
+            </box>
+        </overlay>
+
+        <main>
+            <header>
+
+                <lesson>
+                    <subject>
+                        Lesson 5
+                    </subject>
+                    <discription>
+                        Microprocessors
+                    </discription>
+                </lesson>
+                <logo>
+                    <img src="./img/intel_logo.jpg" />
+                </logo>
+
+            </header>
+            <content>
+
+                <information>
+                    <header>
+                        Microscopic Ingredients
+                    </header>
+                    <content>
+                        <discription>
+                            To learn what goes into a chip, find the ingredient that matches the shape shown on the screen. Then click or tap the ingredient below to fill in the shape.
+                        </discription>
+                        <box id="box">
+                            <label id="box_label">
+                            </label>
+                            <message id="box_message">
+                            </message>
+                            <options>
+                                <button onclick="ingredient_buttom();">Next <img src="./img/arrow-white-right.svg"></button>
+                            </options>
+                        </box>
+                    </content>
+                </information>
+                
+                <activity>
+                    <graphic>
+                        <img id="img_activity" class="graphic_img_silhouette" src="./img/silicon.png"/>
+                    </graphic>
+                    <elements>
+                        <icon><img src="./img/silicon.png" onclick="ingredient(1);"/></icon>
+                        <icon><img src="./img/chemicals-and-gases.png" onclick="ingredient(2);"/></icon>
+                        <icon><img src="./img/metal-bars.png" onclick="ingredient(3);"/></icon>
+                        <icon><img src="./img/lightbulb.png" onclick="ingredient(4);"/></icon>
+                        <icon><img src="./img/chip-mask.png" onclick="ingredient(5);"/></icon>
+                    </elements>
+                </activity>
+
+            </content>
+            <footer>
+
+            </footer>
+        </main>
+
+    </body>
+
+</html>

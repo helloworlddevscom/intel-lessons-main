@@ -1,0 +1,224 @@
+/* LESSON 2.1 CSS */
+html > body > main > content > information {
+    position: absolute;
+    z-index: 10;
+
+    max-width: 600px;
+    flex: 1;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > content > activity {
+    position: absolute;
+    max-width: 1180px;
+    min-width: 1180px;
+    max-height: 700px;
+    flex: 1;
+}
+
+html > body > main > content > information > header {
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    color: #0054AE;
+}
+
+html > body > main > content > information > content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > content > information > content > discription {
+    flex: 0;
+    margin-top: 15px;
+
+    font-size: 20px;
+}
+
+
+html > body > main > content > activity {
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > content > activity > graphic {
+    position: relative;
+
+    flex: 1;
+    margin-right: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html > body > main > content > activity > graphic video {
+    padding-top: 100px;
+    height: 500px;
+    width: auto;
+}
+
+html > body > main > footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html > body > main > footer > slider {
+    flex: 1;
+    max-width: 900px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+html > body > main > footer > slider > speed {
+    flex: 0;
+    min-width: 75px;
+
+    color: #00C7FD;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html > body > main > footer > slider > speed > img {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+html > body > main > footer > slider > nav {
+    flex: 1;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+html > body > main > footer > slider > nav > left,
+html > body > main > footer > slider > nav > marker,
+html > body > main > footer > slider > nav > right {
+    margin-top: 5px;
+    max-height: 10px;
+}
+
+html > body > main > footer > slider > nav > left {
+    flex: 0;
+    margin-left: 10px;
+
+    background: #E9E9E9;
+
+    min-width: 10px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+html > body > main > footer > slider > nav > marker {
+    flex: 1;
+
+    background: #E9E9E9;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.slider-nav-marker-left {
+    justify-content: left;
+}
+
+.slider-nav-marker-right {
+    justify-content: right;
+}
+
+html > body > main > footer > slider > nav > right {
+    flex: 0;
+    margin-right: 10px;
+
+    background: #E9E9E9;
+
+    min-width: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+html > body > main > footer > slider > nav > marker > selected {
+    margin-top: -12px;
+    min-height: 30px;
+    min-width: 30px;
+    max-height: 30px;
+    max-width: 30px;
+
+    border-radius: 30px;
+
+    background: #00C7FD;
+    border: 2px solid #FFFFFF;
+
+    justify-content: center;
+    align-items: center;
+}
+
+html > body > main > footer > slider > nav > marker > selected > dot {
+    min-height: 14px;
+    min-width: 14px;
+    max-height: 14px;
+    max-width: 14px;
+
+    border-radius: 30px;
+
+    background: #0054AE;
+}
+
+.marker_selected > selected {
+    display: flex;
+}
+
+.marker_not_selected > selected {
+    display: none;
+}
+infobox {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+}
+infobox graphic {
+    width:  90px;
+    height:  56px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: rgba(255,255,255,.9);
+    display: block;    
+    text-align: center;
+    line-height: 55px;
+    bottom: 50px;
+    position: absolute;
+}
+infobox#fetch {
+    top: 380px;
+    left: 180px;
+}
+
+infobox#decode {
+    top: 250px;
+}
+infobox#execute {
+    top: 120px;
+    right: 190px;
+}
+#video_intro {
+    position: absolute;
+}
+.hide {
+    display: none;
+}

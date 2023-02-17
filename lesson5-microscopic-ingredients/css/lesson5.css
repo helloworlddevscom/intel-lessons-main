@@ -1,0 +1,238 @@
+/* LESSON 5 CSS */
+html > body > main > content > information {
+    flex: 4;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > content > activity {
+    flex: 5;
+}
+
+html > body > main > content > information > header {
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    color: #0054AE;
+}
+
+html > body > main > content > information > content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > content > information > content > discription {
+    flex: 0;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+html > body > main > content > information > content > box {
+    flex: 1;
+
+    margin-top: 30px;
+    padding: 25px;
+
+    opacity: 0.9;
+    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.15);
+
+    display: none;
+    flex-direction: column;
+}
+
+html > body > main > content > information > content > box > label {
+    margin-bottom: 10px;
+
+    font-size: 34px;
+    font-family: IntelClear-Regular;
+    font-style: normal;
+    font-weight: 400;
+    color: #0054AE;
+}
+
+html > body > main > content > information > content > box > options > message {
+    font-family: IntelClear-Light;
+    font-style: 20px;
+}
+
+html > body > main > content > information > content > box > options > button {
+    margin-top: 20px;
+    width: 110px;
+    height: 50px;
+
+    color: white;
+    background-color: #00C7FD;
+    font-size: 20px;
+    font-family: IntelClear-Light;
+    border: 0px;
+    cursor: pointer;
+}
+
+html > body > main > content > activity {
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > content > activity > graphic {
+    flex: 1;
+    margin: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html > body > main > content > activity > graphic img {
+    width: 65%;
+    height: auto;
+}
+
+.graphic_img_silhouette {
+
+    -webkit-filter: grayscale(100%) brightness(0); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) brightness(0); opacity: 0.1;
+
+}
+
+html > body > main > content > activity > elements {
+    flex: 0;
+    min-height: 120px;
+    margin: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    background-color: #E9E9E9;
+
+    display: flex;
+    flex-direction: row;
+}
+
+html > body > main > content > activity > elements icon {
+    flex: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html > body > main > content > activity > elements > icon img {
+    width: 90px;
+    height: 90px;
+
+    cursor: pointer;
+}
+
+/* OVERLAY MENU */
+html > body > overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: hsl(0, 0%, 100%,0.8);
+    z-index: 10;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+html > body > overlay > box {
+    min-width: 700px;
+    min-height: 250px;
+    margin: auto;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.15);
+
+}
+
+
+/* spark graphic */
+html > body > overlay > box > spark {
+    position: relative; 
+}
+
+html > body > overlay > box > spark > img {
+    position: absolute; 
+    left: -75px;
+    top: -65px;
+
+    width: 75px;
+    height: auto;
+}
+
+
+html > body > overlay > box > header {
+    flex: 0;
+    min-height: 60px;
+    max-height: 60px;
+    background-color: #F3F3F3;
+    padding-left: 50px;
+    padding-bottom: 15px;
+
+    color: #8F5DA2;
+    font-size: 40px;
+    font-family: IntelClear-Regular;
+    font-style: normal;
+    font-weight: 400;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+html > body > overlay > box > bar {
+    background-color: #F3F3F3;
+    display: flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+}
+
+html > body > overlay > box > bar > close {
+
+    color: #0054AE;
+    font-size: 25px;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html > body > overlay > box > message { 
+
+    flex: 1;
+    padding-left: 50px;
+    padding-top: 15px;
+    
+    font-size: 20px;
+    font-family: IntelClear-Light;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+html > body > overlay > box > message > button { 
+
+    margin-top: 20px;
+    padding: 0px 10px 0px 10px;
+    width: 150px;
+    height: 50px;
+
+    color: white;
+    background-color: #00C7FD;
+    font-size: 20px;
+    font-family: IntelClear-Light;
+    border: 0px;
+    cursor: pointer;
+
+}

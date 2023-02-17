@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-US">
+<html>
+	
+	<head>
+		
+		<meta charset="utf-8">
+		<title>Lesson 2.2 | Microprocessors</title>
+		
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,shrink-to-fit=no,minimal-ui"/>
+
+        <link rel="stylesheet" href="./css/index.css">
+
+        <link rel="stylesheet" href="./css/lesson2_2.css">
+        <script type="text/javascript" src="./js/lesson2_2.js"></script>
+
+    </head>
+
+    <body>
+
+        <main>
+            <header>
+
+                <lesson>
+                    <subject>
+                        Lesson 2.2
+                    </subject>
+                    <discription>
+                        Microprocessors
+                    </discription>
+                </lesson>
+                <logo>
+                    <img src="./img/intel_logo.jpg" />
+                </logo>
+
+            </header>
+            <content>
+
+                <information>
+                    <header>
+                        Fetch, Decode, and Execute in a Chip
+                    </header>
+                    <content>
+                        <discription>
+                            <p>The fetch, decode, and execute steps each take place in a specific area of a microprocessor.</p><br/>
+                            <p>Transistors handle each of these steps, and a microprocessor has millions of these transistors. However, it&#8217s not obvious looking at a chip which group of transistors does what.</p><br/>
+                            <p class="bold-font">To find out, click or tap on each word below to see where the processing steps take place.</p>
+                        </discription>
+                        <options>
+                            <button_option><button_link id="button_fetch" onclick="set_view('fetch');">Fetch →</button_option></button_option>
+                            <button_option><button_link id="button_decode" onclick="set_view('decode');">Decode →</button_link></button_option>
+                            <button_option><button_link id="button_execute" onclick="set_view('execute');">Execute →</button_link></button_option>
+                        </options>
+                    </content>
+                </information>
+                
+                <activity>
+                    <overlay class="border_blink" onclick="close_up();">
+                        
+                    </overlay>
+                    <graphic>
+                        <img id="img_activity" src="./img/wafer-mid.jpg"/>
+                        <fetch id="graphic_fetch">Fetch</fetch>
+                        <decode id="graphic_decode">Decode</decode>
+                        <execute id="graphic_execute">Execute</decode>
+                    </graphic>
+                </activity>
+
+            </content>
+            <footer>
+            </footer>
+        </main>
+
+    </body>
+
+</html>

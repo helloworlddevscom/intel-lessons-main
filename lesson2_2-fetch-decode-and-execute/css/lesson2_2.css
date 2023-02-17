@@ -1,0 +1,182 @@
+/* LESSON 2.2 CSS */
+html > body > main > content > information {
+    flex: 3;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > content > activity {
+    flex: 5;
+}
+
+html > body > main > content > information > header {
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    color: #0054AE;
+}
+
+html > body > main > content > information > content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > content > information > content > discription {
+    flex: 0;
+    margin-top: 15px;
+}
+
+html > body > main > content > information > content > options {
+    flex: 1;
+    padding: 40px 0px 40px 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+html > body > main > content > information > content > options > button_option {
+    flex: 1;
+    border: 0px;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+html > body > main > content > information > content > options > button_option > button_link {
+    font-size: 31px;
+    cursor: pointer;
+    color: #AEAEAE;
+    user-select: none;
+}
+
+html > body > main > content > activity {
+    padding: 50px 20px 0px 0px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > content > activity > graphic {
+    position: relative;
+    flex: 1;
+    margin-right: 20px;
+
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+html > body > main > content > activity > graphic img {
+    width: 100%;
+    height: auto;
+}
+
+html > body > main > content > activity > graphic > fetch {
+    position: absolute;
+
+    width: 54px;
+    height: 54px;
+    top: 41px;
+    left: 414px;
+    
+    color: white;
+    background: #B1D272;
+    font-family: IntelClear-Bold;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+html > body > main > content > activity > graphic > decode {
+    position: absolute;
+
+    width: 67px;
+    height: 52px;
+    top: 280px;
+    left: 345px;
+    
+    color: white;
+    background: #B1D272;
+    font-family: IntelClear-Bold;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+html > body > main > content > activity > graphic > execute {
+    position: absolute;
+
+    width: 87px;
+    height: 52px;
+    top: 100px;
+    left: 251px;
+    
+    color: white;
+    background: #B1D272;
+    font-family: IntelClear-Bold;  
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+html > body > main > content > activity > overlay {
+
+    position: relative;
+    top: 410px;
+    left: 312px;
+
+    width: 32px;
+    height: 23px;
+
+    box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.25);
+    border: 5px solid white;
+    cursor: pointer;
+
+}
+
+html > body > main > footer {
+    display: flex;
+    align-items: center;
+}
+
+/* BUTTON BLINK */
+@-webkit-keyframes borderBlink {    
+    from, to {    
+        border-color: lightgray    
+    }    
+    50% {    
+        border-color: white    
+    }    
+}
+
+@keyframes borderBlink {    
+    from, to {    
+        border-color: lightgray    
+    }    
+    50% {    
+        border-color: white    
+    }    
+}
+
+.border_blink {    
+    border:5px solid white;
+    -webkit-animation: borderBlink 1s step-end infinite;    
+    animation: borderBlink 1s step-end infinite;   
+}
+
+/* BUTTON SELECT */
+.button_selected {
+    color: #8BAE46;
+}
+
+.bold-font {
+    font-family: IntelClear-Bold;
+}

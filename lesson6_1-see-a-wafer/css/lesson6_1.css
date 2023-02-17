@@ -1,0 +1,122 @@
+/* LESSON 6.1 CSS */
+html > body > main > content > information {
+    flex: 4;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > content > activity {
+    flex: 5;
+}
+
+html > body > main > content > information > header {
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    color: #0054AE;
+}
+
+html > body > main > content > information > content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+html > body > main > content > information > content > discription {
+    flex: 0;
+    margin-top: 15px;
+
+    font-size: 20px;
+}
+
+html > body > main > content > activity {
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > content > activity > graphic {
+    position: relative;
+
+    flex: 1;
+    margin-right: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html > body > main > content > activity > graphic img {
+    width: 100%;
+    height: auto;
+}
+
+html > body > main > content > activity > graphic > overlay {
+    position: absolute;
+    top: 410px;
+    left: 312px;
+
+    width: 32px;
+    height: 23px;
+
+    box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.25);
+    border: 5px solid white;
+    cursor: pointer;
+
+}
+
+html > body > main > footer {
+    display: flex;
+    align-items: center;
+}
+
+html > body > main > footer > button {
+    margin-left: 40px;
+    width: 110px;
+    height: 50px;
+
+    color: white;
+    background-color: #00C7FD;
+    font-size: 20px;
+    border: 0px;
+    cursor: pointer;
+
+    display: none;
+}
+
+#step_1 {
+    display: flex;
+}
+
+#step_2 {
+    display: none;
+}
+
+#step_2 > activity {
+    flex: 18;
+}
+
+/* BUTTON BLINK */
+@-webkit-keyframes borderBlink {    
+    from, to {    
+        border-color: lightgray    
+    }    
+    50% {    
+        border-color: white    
+    }    
+}
+
+@keyframes borderBlink {    
+    from, to {    
+        border-color: lightgray    
+    }    
+    50% {    
+        border-color: white    
+    }    
+}
+
+.border_blink{    
+    border:5px solid white;
+    -webkit-animation: borderBlink 1s step-end infinite;    
+    animation: borderBlink 1s step-end infinite;   
+}

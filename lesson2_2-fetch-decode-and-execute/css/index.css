@@ -1,0 +1,110 @@
+@font-face {
+    font-family: IntelClear-Regular;
+    src: url(../ttf/IntelClear-Regular.ttf);
+}
+@font-face {
+    font-family: IntelClear-Light;
+    src: url(../ttf/IntelClear-Light.ttf);
+}
+@font-face {
+    font-family: IntelClear-Bold;
+    src: url(../ttf/IntelClear-Bold.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+
+    font-family: IntelClear-Light, Arial, Helvetica, sans-serif;
+
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+html > body > main {
+    max-width: 1180px;
+    max-height: 820px;
+    min-width: 1180px;
+    min-height: 820px;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > header,
+html > body > main > footer {
+    flex: 0;
+
+    min-height: 100px;
+    max-height: 100px;
+
+    border: 1px solid lightgrey;
+
+    display: flex;
+    flex-direction: row;
+}
+
+html > body > main > content {
+    flex: 1;
+
+    min-height: 615px;
+
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+
+    display: flex;
+    flex-direction: row;
+}
+
+html > body > main > header > lesson {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > header > logo {
+    flex: 1;
+    max-width: 100px;
+    max-height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > header > logo > img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+html > body > main > header > lesson > subject,
+html > body > main > header > lesson > discription {
+    flex: 1;
+    display: flex;
+    padding-left: 30px;
+}
+
+html > body > main > header > lesson > subject {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+
+    align-items: flex-end;
+}
+
+html > body > main > header > lesson > discription {
+    font-size: 28px;
+    font-family: IntelClear-Regular;
+    font-style: normal;
+    font-weight: 400;
+
+    color: #00C7FD;
+    align-items: flex-start;
+}

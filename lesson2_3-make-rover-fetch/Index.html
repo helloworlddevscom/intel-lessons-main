@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en-US">
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>Lesson 2.3 | Microprocessors</title>
+
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,shrink-to-fit=no,minimal-ui"/>
+
+        <link rel="stylesheet" href="./css/index.css">
+
+        <link rel="stylesheet" href="./css/lesson2_3.css">
+        <script type="text/javascript" src="./js/lesson2_3.js"></script>
+
+    </head>
+
+    <body>
+
+        <overlay id="overlay">
+
+            <box id="before_start">
+                <spark>
+                    <img src="./img/modal-sparks-purple.png">
+                </spark>
+                <bar>
+                    <close onclick="start_button();"><img src="./img/menu_exit_button.svg"></close>
+                </bar>
+                <header>
+                    Before you get started 
+                </header>
+                <message>
+                    Computers only follow the instructions they are given. To communicate with a computer, you need to use very clear instructions arranged in the exact sequence you want them done. In this activity, you learn what it&#8217s like to control a robotic dog with just three commands. You will use the same fetch, decode, and execute cycle a microprocessor uses to process commands. 
+                    <button onclick="start_button();">Start <img src="./img/arrow-white-right.svg"></button>
+                </message>
+            </box>
+
+            <box id="congratulations">
+                <spark>
+                    <img src="./img/modal-sparks-green.png">
+                </spark>
+                <bar>
+                    <close onclick="start_button();"><img src="./img/menu_exit_button.svg"></close>
+                </bar>
+                <header>
+                    Congratulations! 
+                    <img src="./img/dog-angled-pose-1-half-alpha.png">
+                </header>
+                <message>
+                    You successfully gave the robotic dog a bone!
+                    <button onclick="start_button();">Try it again <img src="./img/arrow-white-right.svg"></button>
+                </message>
+            </box>
+
+        </overlay>
+
+        <main>
+
+            <header>
+
+                <lesson>
+                    <subject>
+                        Lesson 2.3
+                    </subject>
+                    <discription>
+                        Microprocessors
+                    </discription>
+                </lesson>
+                <logo>
+                    <img src="./img/intel_logo.jpg" />
+                </logo>
+
+            </header>
+
+            <content>
+
+                <information>
+                    <header>
+                        Make Rover Fetch
+                    </header>
+                    <content>
+                        <discription>
+                            <b class="bold-font">Instructions:</b>
+                            <ol>
+                                <li>Click the bone.</li>
+                                <li>In the <b class="bold-font">Fetch</b> box, click or tap the number corresponding to the memory command that you want the dog to follow.</li>
+                                <li>When the command appears in the <b class="bold-font">Decode</b> box, click or tap the Decode box to execute that command.</li>
+                                <li>When the translated command appears in the Execute box, click or tap the <b class="bold-font">Execute</b> box to run that command.</li>
+                                <li>Continue giving commands until the dog retrieves the bone.</li>
+                            </ol>
+                        </discription>
+                        <controls>
+                            <column>
+                                <memory>
+                                    <label>Memory:</label>
+                                    <ol>
+                                        <li>Walk</li>
+                                        <li>Turn left</li>
+                                        <li>Turn right</li>
+                                        <li>Pick up</li>
+                                    </ol>
+                                </memory>
+                            </column>
+                            <column id="column_fetch" class="border_blink">
+                                <box>
+                                    <label>Fetch</label>
+                                    <fetch>
+                                        <button onclick="set_fetch(1);">1</button>
+                                        <button onclick="set_fetch(2);">2</button>
+                                        <button onclick="set_fetch(3);">3</button>
+                                        <button onclick="set_fetch(4);">4</button>
+                                    </fetch>
+                                </box>
+                            </column>
+                            <column id="column_decode" onclick="set_decode();">
+                                <box>
+                                    <label>Decode</label>
+                                    <decode id="box_decode"></decode>
+                                </box>
+                            </column>
+                            <column id="column_execute" class="" onclick="set_execute();">
+                                <box>
+                                    <label>Execute</label>
+                                    <execute id="box_execute"></execute>
+                                </box>
+                            </column>
+                        </controls>
+                    </content>
+                </information>
+
+                <activity>
+                    <grid>
+                        <container>
+                            <background>
+                                <box></box><box></box><box></box><box></box><box></box>
+                                <box></box><box></box><box></box><box></box><box></box>
+                                <box></box><box></box><box></box><box></box><box></box>
+                                <box></box><box></box><box></box><box></box><box></box>
+                            </background>
+                            <bone>
+                                <img id="bone" src="./img/bone.png">
+                            </bone>
+                            <dog>
+                                <img id="dog" src="./img/dog-top-pose-1.png">
+                            </dog>
+                            <reset>
+                                <img id="bone_reset" onclick="set_bone_random();" src="./img/bone_click.png">
+                            </reset>
+                        </container>
+                    </grid>
+                </activity>
+
+            </content>
+
+            <footer>
+                <!-- <button id="back_button" onclick="set_dog_move_up();">Up</button>
+                <button id="back_button" onclick="set_dog_move_down();">Down</button>
+                <button id="back_button" onclick="set_dog_move_left();">Left</button>
+                <button id="back_button" onclick="set_dog_move_right();">Right</button>
+                <button id="back_button" onclick="set_dog_turn_left();">Turn Left</button>
+                <button id="back_button" onclick="set_dog_turn_right();">Turn Right</button>
+                <button id="back_button" onclick="set_dog_pick_up();">Pick Up</button> -->
+            </footer>
+
+            <script>
+                // set_bone_random();
+                set_dog_reset();
+            </script>
+
+        </main>
+
+    </body>
+
+</html>

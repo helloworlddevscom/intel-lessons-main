@@ -1,0 +1,489 @@
+/* LESSON 2.3 CSS */
+html > body > main > content > information {
+    flex: 3;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > content > activity {
+    flex: 4;
+}
+
+html > body > main > content > information > header {
+    padding-top: 20px;
+    padding-left: 20px;
+
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    color: #0054AE;
+}
+
+html > body > main > content > information > content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > content > information > content > discription {
+    flex: 1;
+    padding-left: 20px;
+    margin-top: 15px;
+
+    font-style: normal;
+    font-size: 20px;
+}
+
+html > body > main > content > information > content ol {
+    margin-left: 20px;
+}
+
+html > body > main > content > information > content > controls {
+    flex: 1;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html > body > main > content > information > content > controls > column {
+    flex: 1;
+    padding: 10px;
+    min-height: 140px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > content > information > content > controls > column > memory {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    color: #0054AE;
+}
+
+html > body > main > content > information > content > controls > column > memory > label {
+    flex: 0;
+    padding: 3px;
+
+    font-style: normal;
+    font-family: IntelClear-Bold;
+    font-size: 17px;
+}
+html > body > main > content > information > content > controls > column > memory > ol {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+html > body > main > content > information > content > controls > column > box {
+    flex: 1;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > content > information > content > controls > column > box > label {
+    flex: 0;
+    padding: 3px;
+
+    background: #0054AE;
+    color: white;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html > body > main > content > information > content > controls > column > box > fetch {
+    flex: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    color: white;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 59px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+html > body > main > content > information > content > controls > column > box > fetch > button {
+    flex: 1 1 auto;
+    margin: 5px;
+    min-width: 35px;
+    min-height: 35px;
+    max-width: 35px;
+    max-height: 35px;
+
+    color: white;
+    background: #00C7FD;
+    border: 2px solid #00C7FD;
+
+    cursor: pointer;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+html > body > main > content > information > content > controls > column > box > decode {
+    flex: 1;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 59px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html > body > main > content > information > content > controls > column > box > execute {
+    flex: 1;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 59px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html > body > main > content > activity {
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > content > activity > grid {
+    flex: 1;
+    padding-left: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html > body > main > content > activity > grid > container {
+    min-height: 450px;
+    min-width: 650px;
+}
+
+html > body > main > content > activity > grid > container > background {
+    position: absolute;
+    border: 1px solid  #AEAEAE;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 125px);
+    grid-template-rows: repeat(4, 125px);
+}
+
+html > body > main > content > activity > grid > container > reset,
+html > body > main > content > activity > grid > container > bone {
+    position: absolute;
+    border: 1px solid  #AEAEAE;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 125px);
+    grid-template-rows: repeat(4, 125px);
+}
+
+html > body > main > content > activity > grid > container > dog {
+    position: absolute;
+
+    min-width: 625px;
+    min-height: 500px;
+
+    display: flex;
+}
+
+html > body > main > content > activity > grid > container > dog > img {
+    position: absolute;
+}
+
+html > body > main > content > activity > grid > container > reset > img,
+html > body > main > content > activity > grid > container > bone > img,
+html > body > main > content > activity > grid > container > dog > img {
+    height: 125px;
+    width: 125px;
+}
+
+html > body > main > content > activity > grid > container > background box {
+    border: 1px solid  #AEAEAE;
+}
+
+html > body > main > footer {
+    display: flex;
+    align-items: center;
+}
+
+html > body > main > footer > button {
+    margin-left: 40px;
+    width: 110px;
+    height: 50px;
+
+    color: white;
+    background-color: #00C7FD;
+    font-size: 20px;
+    border: 0px;
+    
+    cursor: pointer;
+}
+
+
+/* OVERLAY MENU */
+html > body > overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: hsl(0, 0%, 100%,0.8);
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html > body > overlay > box {
+    min-width: 700px;
+    min-height: 250px;
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+/* spark graphic */
+html > body > overlay > box > spark {
+    position: relative; 
+}
+
+html > body > overlay > box > spark > img {
+    position: absolute; 
+    left: -75px;
+    top: -65px;
+
+    width: 75px;
+    height: auto;
+}
+
+
+html > body > overlay > box > header {
+    flex: 0;
+    min-height: 60px;
+    max-height: 60px;
+    background-color: #F3F3F3;
+    padding-left: 50px;
+    padding-bottom: 15px;
+
+    font-size: 40px;
+    font-family: IntelClear-Regular;
+    font-weight: 400;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+html > body > overlay > box > bar {
+    background-color: #F3F3F3;
+    display: flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+}
+
+html > body > overlay > box > bar > close {
+
+    color: #0054AE;
+    font-size: 25px;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html > body > overlay > box > message { 
+    flex: 1;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > overlay > box > message > button { 
+
+    margin: 20px 0px 40px 0px;
+    padding: 0px 10px 0px 10px;
+    width: 150px;
+    height: 50px;
+
+    color: white;
+    background-color: #00C7FD;
+    
+    font-size: 20px;
+    font-family: IntelClear-Light;
+
+    border: 0px;
+    cursor: pointer;
+
+}
+
+.step_focus {
+    border: 2px solid #00C7FD;
+
+    cursor: pointer;
+}
+
+.step_focus > box {
+    background: #00C7FD;
+
+    display: flex;
+}
+
+.step_focus > box > decode,
+.step_focus > box > execute {
+    flex: 1;
+
+    color: white;
+
+    font-style: normal;
+    font-weight: 700;
+    line-height: 59px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+/* BUTTON BLINK */
+@-webkit-keyframes borderBlink {    
+    from, to {    
+        border-color: #0054AE   
+    }    
+    50% {    
+        border-color: #00C7FD    
+    }    
+}
+
+@keyframes borderBlink {    
+    from, to {    
+        border-color: #0054AE   
+    }    
+    50% {    
+        border-color: #00C7FD   
+    }    
+}
+
+.border_blink {    
+    border:2px solid #00C7FD;
+    -webkit-animation: borderBlink 1s step-end infinite;    
+    animation: borderBlink 1s step-end infinite;   
+}
+
+
+@-webkit-keyframes borderBlinkExecute {    
+    from, to {    
+        border-color: #E96115   
+    }    
+    50% {    
+        border-color: #FF8F51    
+    }    
+}
+
+@keyframes borderBlinkExecute {    
+    from, to {    
+        border-color: #E96115   
+    }    
+    50% {    
+        border-color: #FF8F51   
+    }    
+}
+
+.border_blink_execute {    
+    border:2px solid #FF8F51;
+    color: white;
+
+    -webkit-animation: borderBlinkExecute 1s step-end infinite;    
+    animation: borderBlinkExecute 1s step-end infinite; 
+}
+
+.border_blink_execute > box {
+    background: #FF8F51;
+
+    display: flex;
+}
+
+.border_blink_execute > box > label {
+    background: #E96115;
+}
+
+
+
+/* before_start */
+#congratulations {
+    display: none;
+}
+
+#congratulations > header {
+    color: #8BAE46;
+}
+
+#congratulations > header > img {
+    position: relative;
+    top: 100px;
+    left: 70px;
+
+    height: 200px;
+    width: 200px;
+}
+
+#before_start {
+    display: flex;
+}
+
+#before_start > header {
+    color: #8F5DA2;
+}
+
+.bold-font {
+    font-family: IntelClear-Bold;
+}

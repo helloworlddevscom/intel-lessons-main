@@ -1,0 +1,475 @@
+/* LESSON 1 CSS */
+html > body > main > content {
+    flex-direction: column;
+}
+
+html > body > main > content > information {
+    flex: 0;
+    padding: 10px 30px 5px 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > content > activity {
+    flex: 1;
+}
+
+html > body > main > content > information > header {
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    color: #0054AE;
+}
+
+html > body > main > content > information > discription {
+    flex: 0;
+    margin-top: 5px;
+
+    font-size: 20px;
+}
+
+
+html > body > main > content > activity {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    padding-top: 13px;
+}
+
+html > body > main > content > activity > controls {
+    flex: 1;
+    padding: 0px 20px 30px 30px;
+
+    min-width: 450px;
+    max-width: 450px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > content > activity > controls > instructions {
+    flex: 0;
+
+    font-size: 18px;
+}
+
+html > body > main > content > activity > controls > instructions > span {
+    font-family: IntelClear-Bold;
+}
+
+html > body > main > content > activity > controls > instructions > p {
+    margin-top: 5px;
+}
+
+html > body > main > content > activity > controls > box {
+    flex: 1;
+    margin-top: 20px;
+
+    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+}
+
+html > body > main > content > activity > controls > box > steps {
+    flex: 1;
+    max-width: 175px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > content > activity > controls > box > actions {
+    flex: 1;
+
+    border-left: 1px solid #E9E9E9;
+
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > content > activity > controls > box > steps > header,
+html > body > main > content > activity > controls > box > actions > header {
+    flex: 0;
+
+    min-height: 40px;
+    max-height: 40px;
+
+    background-color: #0054AE;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html > body > main > content > activity > controls > box > steps > interface,
+html > body > main > content > activity > controls > box > actions > interface {
+    flex: 1;
+    padding: 15px 0px 15px 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+html > body > main > content > activity > controls > box > steps > interface > step {
+    flex: 1;
+    
+    padding-left: 15px;
+    padding-right: 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+html > body > main > content > activity > controls > box > steps > interface > step > label {
+    flex: 1;    
+}
+
+html > body > main > content > activity > controls > box > steps > interface > step > box {
+    flex: 0;
+    min-width: 25px;
+    min-height: 25px;
+
+    border: 2px solid #00C7FD;
+    color: #00C7FD;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html > body > main > content > activity > controls > box > actions > interface > top {
+    flex: 1;
+    padding-right: 20px;
+
+    display: flex;
+}
+
+html > body > main > content > activity > controls > box > actions > interface > bottom {
+    flex: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html > body > main > content > activity > controls > box > actions > interface > bottom > button {
+    margin: 10px 0px 0px 0px;
+    width: 216px;
+    height: 40px;
+
+    color: white;
+    background-color: #00C7FD;
+    font-size: 16px;
+    border: 0px;
+    cursor: pointer;
+}
+
+
+html > body > main > content > activity > controls > box > actions > interface > bottom > button > img {
+    padding-left: 5px;
+}
+
+
+html > body > main > content > activity > controls > box > actions > interface > top column {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > content > activity > controls > box > actions > interface > top column > step {
+    flex: 1;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+html > body > main > content > activity > controls > box > actions > interface > top column > step > label {
+    flex: 1;
+    padding-right: 6px;
+
+    font-weight: bold;
+
+    display: flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+html > body > main > content > activity > controls > box > actions > interface > top column > step > box {
+    flex: 0;
+    min-width: 25px;
+    min-height: 25px;
+    max-width: 25px;
+    max-height: 25px;
+
+    color: #00C7FD;
+    border: 2px solid #00C7FD;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+html > body > main > content > activity > grid {
+    flex: 1;
+    padding-top: 10px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+html > body > main > content > activity > grid > container {
+    min-height: 450px;
+    min-width: 650px;
+
+    border-top: 5px solid #221F1F;
+}
+
+html > body > main > content > activity > grid > container > background {
+    position: absolute;
+    border: 1px solid  #AEAEAE;
+
+    display: grid;
+
+    grid-template-columns: repeat(10, 65px);
+    grid-template-rows: repeat(7, 65px);
+}
+
+html > body > main > content > activity > grid > container > background box {
+    border: 1px solid  #AEAEAE;
+}
+
+html > body > main > content > activity > grid > container > bone,
+html > body > main > content > activity > grid > container > dog,
+html > body > main > content > activity > grid > container > pole {
+    position: absolute;
+
+    display: grid;
+    grid-template-columns: repeat(10, 65px);
+    grid-template-rows: repeat(7, 65px);
+}
+
+html > body > main > content > activity > grid > container > arm {
+    position: relative;
+    width: 65px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.nonflexable {
+    flex: 1;
+    width: 65px;
+    height: 65px;
+}
+.flexable {
+    flex: 2;
+    width: 65px;
+    min-height: 1px;
+    max-height: 1px;
+}
+
+.bone_start {
+    grid-area: 7 / 3;
+}
+
+.bone_end {
+    grid-area: 7 / 6;
+}
+
+html > body > main > content > activity > grid > container > pole > img {
+    grid-area: 5 / 5;
+    min-height: 195px;
+}
+
+html > body > main > content > activity > grid > container > dog > img {
+    grid-area: 4 / 7;
+    min-height: 260px;
+    min-width: 260px;
+}
+
+html > body > main > footer {
+    display: flex;
+    align-items: center;
+}
+
+html > body > main > footer > button {
+    margin-left: 40px;
+    width: 180px;
+    height: 50px;
+
+    color: #0054AE;
+    background-color: #E9E9E9;
+    font-size: 16px;
+    border: 0px;
+    cursor: pointer;
+}
+
+/* BUTTON BLINK */
+@-webkit-keyframes borderBlink {    
+    from, to {    
+        border-color: #0054AE    
+    }    
+    50% {    
+        border-color: #E96115   
+    }    
+}
+
+@keyframes borderBlink {    
+    from, to {    
+        border-color: #0054AE     
+    }    
+    50% {    
+        border-color: #E96115   
+    }    
+}
+
+.border_blink{    
+    border:2px solid #00C7FD;;
+    -webkit-animation: borderBlink 1s step-end infinite;    
+    animation: borderBlink 1s step-end infinite;   
+}
+
+
+/* OVERLAY MENU */
+html > body > overlay {
+    z-index: 10;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: hsl(0, 0%, 100%,0.8);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+html > body > overlay > box {
+    min-width: 700px;
+    min-height: 250px;
+    margin: auto;
+
+    background-color: white;
+    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* spark graphic */
+html > body > overlay > box > spark {
+    position: relative; 
+}
+
+html > body > overlay > box > spark > img {
+    position: absolute; 
+    left: -75px;
+    top: -65px;
+
+    width: 75px;
+    height: auto;
+}
+
+
+html > body > overlay > box > header {
+    flex: 0;
+    min-height: 60px;
+    max-height: 60px;
+    background-color: #F3F3F3;
+    padding-left: 50px;
+    padding-bottom: 15px;
+
+    font-size: 40px;
+    font-family: IntelClear-Regular;
+    font-style: normal;
+    font-weight: 400;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+html > body > overlay > box > bar {
+    background-color: #F3F3F3;
+    display: flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+}
+
+html > body > overlay > box > bar > close {
+    color: #0054AE;
+    font-size: 25px;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html > body > overlay > box > message {
+    flex: 1;
+    padding-left: 50px;
+    padding-top: 15px;
+
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > overlay > box > message > button { 
+    margin: 20px 0px 40px 0px;
+    padding: 0px 10px 0px 10px;
+    width: 150px;
+    height: 50px;
+
+    color: white;
+    background-color: #00C7FD;
+    border: 0px;
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+#congratulations {
+    display: none;
+}
+
+#congratulations > header {
+    color: #8BAE46;
+}
+
+#congratulations > header > img {
+    position: relative;
+    top: 100px;
+    left: 70px;
+
+    height: 200px;
+    width: 200px;
+}
+
+#try_again {
+    display: none;
+}
+
+#try_again > header {
+    color: #E96115;;
+}

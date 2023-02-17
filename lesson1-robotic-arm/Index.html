@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en-US">
+<html>
+	
+	<head>
+		
+		<meta charset="utf-8">
+		<title>Lesson 1 | Microprocessors</title>
+		
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,shrink-to-fit=no,minimal-ui"/>
+
+        <link rel="stylesheet" href="./css/index.css">
+
+        <link rel="stylesheet" href="./css/lesson1.css">
+        <script type="text/javascript" src="./js/lesson1.js"></script>
+
+    </head>
+
+    <body>
+
+        <overlay id="overlay">
+
+            <box id="congratulations">
+                <spark>
+                    <img src="./img/modal-sparks-green.png">
+                </spark>
+                <bar>
+                    <close onclick="set_close();"><img src="./img/menu_exit_button.svg"></close>
+                </bar>
+                <header>
+                    Congratulations! 
+                    <img src="./img/dog-angled-pose-1-half-alpha.png">
+                </header>
+                <message>
+                    You successfully gave the robotic dog a bone!
+                    <button onclick="set_reset();">Try it again <img src="./img/arrow-white-right.svg"></button>
+                </message>
+            </box>
+
+            <box id="try_again">
+                <spark>
+                    <img src="./img/modal-sparks-orange.png">
+                </spark>
+                <bar>
+                    <close onclick="set_close();"><img src="./img/menu_exit_button.svg"></close>
+                </bar>
+                <header>
+                    Try again!  
+                </header>
+                <message>
+                    Hmm, something isn't quite right there. Do a little more<br/> experimenting, and then resubmit your answers.
+                    <button onclick="set_reset();">Try it again <img src="./img/arrow-white-right.svg"></button>
+                </message>
+            </box>
+
+        </overlay>
+
+        <main>
+            <header>
+
+                <lesson>
+                    <subject>
+                        Lesson 1
+                    </subject>
+                    <discription>
+                        Microprocessors
+                    </discription>
+                </lesson>
+                <logo>
+                    <img src="./img/intel_logo.jpg" />
+                </logo>
+
+            </header>
+
+            <content>
+
+                <information>
+                    <header>
+                        Robotic Arm
+                    </header>
+                    <discription>
+                        Learn how simple each instruction must be in order to give this robotic dog a bone.
+                    </discription>
+                </information>
+                
+                <activity>
+
+                    <controls>
+                        <instructions>
+                            <span>Can you do the following in 18 steps?</span>
+                            Pick up the bone, carry it over to the dog, place it in front of the dog.<br><br>
+                            Select the action, then select the numbered step in the sequence you want the actions done. Fill out the entire sequence before hitting Execute.
+                        </instructions>
+                        <box>
+                            <steps>
+                                <header onclick="set_try_again();">
+                                    Actions
+                                </header>
+                                <interface>
+                                    <step><label>Space forward</label><box id="action_box_1" onclick="set_action_focus(1);">►</box></step>
+                                    <step><label>Space back</label><box id="action_box_2" onclick="set_action_focus(2);">◄</box></step>
+                                    <step><label>Space down</label><box id="action_box_3" onclick="set_action_focus(3);">▼</box></step>
+                                    <step><label>Space up</label><box id="action_box_4" onclick="set_action_focus(4);">▲</box></step>
+                                    <step><label>Open hand</label><box id="action_box_5" onclick="set_action_focus(5);">○</box></step>
+                                    <step><label>Close hand</label><box id="action_box_6" onclick="set_action_focus(6);">●</box></step>
+                                </interface>
+                            </steps>
+                            <actions>
+                                <header onclick="set_congratulations();">
+                                    Steps
+                                </header>
+                                <interface>
+                                    <top>
+                                        <column>
+                                            <step><label>1</label><box id="step_box_1" onclick="set_step_focus(1);" ></box></step>
+                                            <step><label>2</label><box id="step_box_2" onclick="set_step_focus(2);" ></box></step>
+                                            <step><label>3</label><box id="step_box_3" onclick="set_step_focus(3);" ></box></step>
+                                            <step><label>4</label><box id="step_box_4" onclick="set_step_focus(4);" ></box></step>
+                                            <step><label>5</label><box id="step_box_5" onclick="set_step_focus(5);" ></box></step>
+                                        </column>
+                                        <column>
+                                            <step><label>6</label><box id="step_box_6" onclick="set_step_focus(6);" ></box></step>
+                                            <step><label>7</label><box id="step_box_7" onclick="set_step_focus(7);" ></box></step>
+                                            <step><label>8</label><box id="step_box_8" onclick="set_step_focus(8);" ></box></step>
+                                            <step><label>9</label><box id="step_box_9" onclick="set_step_focus(9);" ></box></step>
+                                            <step><label>10</label><box id="step_box_10" onclick="set_step_focus(10);" ></box></step>
+                                        </column>
+                                        <column>
+                                            <step><label>11</label><box id="step_box_11" onclick="set_step_focus(11);" ></box></step>
+                                            <step><label>12</label><box id="step_box_12" onclick="set_step_focus(12);" ></box></step>
+                                            <step><label>13</label><box id="step_box_13" onclick="set_step_focus(13);" ></box></step>
+                                            <step><label>14</label><box id="step_box_14" onclick="set_step_focus(14);" ></box></step>
+                                            <step><label>15</label><box id="step_box_15" onclick="set_step_focus(15);" ></box></step>
+                                        </column>
+                                        <column>
+                                            <step><label>16</label><box id="step_box_16" onclick="set_step_focus(16);" ></box></step>
+                                            <step><label>17</label><box id="step_box_17" onclick="set_step_focus(17);" ></box></step>
+                                            <step><label>18</label><box id="step_box_18" onclick="set_step_focus(18);" ></box></step>
+                                            <step><label>19</label><box id="step_box_19" onclick="set_step_focus(19);" ></box></step>
+                                            <step><label>20</label><box id="step_box_20" onclick="set_step_focus(20);" ></box></step>
+                                        </column>
+                                    </top>
+                                    <bottom>
+                                        <button id="execute_button" onclick="set_execute();">Execute<img src="./img/arrow-white-right.svg"></button>
+                                    </bottom>
+                                </interface>
+                            </actions>
+                        </box>
+                    </controls>
+
+                    <grid>
+                        <container>
+                            <background>
+                                <box></box><box></box><box></box><box></box><box></box><box></box><box></box><box></box><box></box><box></box>
+                                <box></box><box></box><box></box><box></box><box></box><box></box><box></box><box></box><box></box><box></box>
+                                <box></box><box></box><box></box><box></box><box></box><box></box><box></box><box></box><box></box><box></box>
+                                <box></box><box></box><box></box><box></box><box></box><box></box><box></box><box></box><box></box><box></box>
+                                <box></box><box></box><box></box><box></box><box></box><box></box><box></box><box></box><box></box><box></box>
+                                <box></box><box></box><box></box><box></box><box></box><box></box><box></box><box></box><box></box><box></box>
+                                <box></box><box></box><box></box><box></box><box></box><box></box><box></box><box></box><box></box><box></box>
+                            </background>
+                            <bone>
+                                <img id="bone" class="nonflexable bone_start" src="./img/bone-side-pose.png">
+                            </bone>
+                            <pole>
+                                <img class="nonflexable" src="./img/robotic-hand-classic-blue-robot-tubing.png">
+                            </pole>
+                            <dog>
+                                <img id="robot_dog" class="nonflexable" src="./img/dog-side-pose-1.png">
+                            </dog>
+                            <arm id="robot_arm">
+                                <img class="nonflexable" src="./img/robotic-hand-classic-blue-top-of-robot.png">
+                                <img id="robot_arm_bar" class="flexable" src="./img/robotic-hand-classic-blue-robot-tubing.png">
+                                <img id="robot_arm_hand" class="nonflexable" src="./img/robotic-hand-classic-blue-arm-1.png">
+                            </arm>
+                        </container>
+                    </grid>
+
+                </activity>
+
+            </content>
+
+            <footer>
+                <button onclick="set_clear_step();">Clear steps</button>
+            </footer>
+            
+        </main>
+
+    </body>
+
+</html>

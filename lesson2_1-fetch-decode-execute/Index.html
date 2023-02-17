@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en-US">
+<html>
+	
+	<head>
+		
+		<meta charset="utf-8">
+		<title>Lesson 2.1 | Microprocessors</title>
+		
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,shrink-to-fit=no,minimal-ui"/>
+
+        <link rel="stylesheet" href="./css/index.css">
+
+        <link rel="stylesheet" href="./css/lesson2_1.css">
+        <script type="text/javascript" src="./js/lesson2_1.js"></script>
+
+    </head>
+
+    <body>
+
+        <main>
+
+            <header>
+
+                <lesson>
+                    <subject>
+                        Lesson 2.1
+                    </subject>
+                    <discription>
+                        Microprocessors
+                    </discription>
+                </lesson>
+                <logo>
+                    <img src="./img/intel_logo.jpg" />
+                </logo>
+
+            </header>
+
+            <content>
+
+                <information>
+                    <header>
+                        Fetch, Decode, Execute
+                    </header>
+                    <content>
+                        <discription>
+                            <p>In a microprocessor, the fetch, decode, and execute steps are all done by transistors. In a computer, these steps are done over and over again, millions of times per second.</p><br/>
+                            <p>Use the slider bar to speed up or slow down the action. <br>Click or tap on each transistor to identify its action.</p>
+                        </discription>
+                    </content>
+                </information>
+
+                <activity>
+                    <graphic>
+                        <video id="video_intro" autoplay muted>
+                            <source src="./mp4/Intro-Animation.mp4" type="video/mp4">
+                            <p>Your browser doesn't support HTML5 video. Here is a <a href="./mp4/18243-1-Lesson-2.1-Loop-Animation-v0.1.mp4">link to the video</a> instead.</p>
+                        </video>
+                        <video id="video_main" loop muted>
+                            <source src="./mp4/Loop-Animation.mp4" type="video/mp4">
+                            <p>Your browser doesn't support HTML5 video. Here is a <a href="./mp4/18243-1-Lesson-2.1-Loop-Animation-v0.1.mp4">link to the video</a> instead.</p>
+                        </video>
+                        <infobox id="fetch" onclick="showbox('fetch');"><graphic class="hide">Fetch</graphic></infobox>
+                        <infobox id="decode" onclick="showbox('decode');"><graphic class="hide">Decode</graphic></infobox>
+                        <infobox id="execute" onclick="showbox('execute');"><graphic class="hide">Execute</graphic></infobox>
+                    </graphic>
+                </activity>
+
+            </content>
+
+            <footer>
+                <slider>
+                    <speed onclick="set_slower();"><img src="./img/arrow-blue-left.svg"> Slower</speed>
+                    <nav>
+                        <left></left>
+                        <marker id="marker_1" class="slider-nav-marker-left marker_not_selected" onclick="set_marker(1);"><selected><dot></dot></selected></marker>
+                        <marker id="marker_2" class="marker_not_selected" onclick="set_marker(2);"><selected><dot></dot></selected></marker>
+                        <marker id="marker_3" class="marker_selected" onclick="set_marker(3);"><selected><dot></dot></selected></marker>
+                        <marker id="marker_4" class="marker_not_selected" onclick="set_marker(4);"><selected><dot></dot></selected></marker>
+                        <marker id="marker_5" class="slider-nav-marker-right marker_not_selected" onclick="set_marker(5);"><selected><dot></dot></selected></marker>
+                        <right></right>
+                    </nav>
+                    <speed onclick="set_faster();">Faster <img src="./img/arrow-blue-right.svg"></speed>
+                </slider>
+            </footer>
+        </main>
+
+        <script>
+            onLoad();
+        </script>
+
+    </body>
+
+</html>

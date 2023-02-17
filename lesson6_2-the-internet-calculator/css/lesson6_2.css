@@ -1,0 +1,395 @@
+/* LESSON 6.2 CSS */
+html > body > main > content > information {
+    flex: 4;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > content > activity {
+    flex: 5;
+}
+
+html > body > main > content > information > header {
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    color: #0054AE;
+}
+
+html > body > main > content > information > content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+html > body > main > content > information > content > discription {
+    flex: 0;
+    margin-top: 15px;
+    margin-left: 20px;
+
+    font-size: 20px;
+}
+
+html > body > main > content > activity {
+    display: flex;
+    flex-direction: column;
+}
+
+html > body > main > content > activity > graphic {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+    flex: 1;
+    margin-right: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+html > body > main > content > activity > graphic img {
+    width: 100%;
+    height: auto;
+}
+
+html > body > main > content > activity > graphic > file-size-numbers {
+    position: absolute;
+    top: 44px;
+    left: 206px;
+    width: 209px;
+    height: 45px;
+}
+
+html > body > main > content > activity > graphic > file-size-mb {
+    position: absolute;
+    top: 44px;
+    left: 422px;
+    width: 45px;
+    height: 45px;
+
+    cursor: pointer;
+}
+
+html > body > main > content > activity > graphic > file-size-gb {
+    position: absolute;
+    top: 44px;
+    left: 473px;
+    width: 45px;
+    height: 45px;
+
+    cursor: pointer;
+}
+
+html > body > main > content > activity > graphic > file-size-num1 {
+    position: absolute;
+    top: 122px;
+    left: 77px;
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50px;
+    
+    cursor: pointer;
+}
+
+html > body > main > content > activity > graphic > file-size-num2 {
+    position: absolute;
+    top: 122px;
+    left: 133px;
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50px;
+    
+    cursor: pointer;
+}
+
+html > body > main > content > activity > graphic > file-size-num3 {
+    position: absolute;
+    top: 122px;
+    left: 189px;
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50px;
+
+    cursor: pointer;
+}
+
+html > body > main > content > activity > graphic > file-size-num4 {
+    position: absolute;
+    top: 122px;
+    left: 245px;
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50px;
+    
+    cursor: pointer;
+}
+
+html > body > main > content > activity > graphic > file-size-num5 {
+    position: absolute;
+    top: 122px;
+    left: 301px;
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50px;
+    
+    cursor: pointer;
+}
+
+html > body > main > content > activity > graphic > file-size-num6 {
+    position: absolute;
+    top: 122px;
+    left: 357px;
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50px;
+    
+    cursor: pointer;
+}
+
+html > body > main > content > activity > graphic > file-size-num7 {
+    position: absolute;
+    top: 178px;
+    left: 77px;
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50px;
+    
+    cursor: pointer;
+}
+
+html > body > main > content > activity > graphic > file-size-num8 {
+    position: absolute;
+    top: 178px;
+    left: 133px;
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50px;
+    
+    cursor: pointer;
+}
+
+html > body > main > content > activity > graphic > file-size-num9 {
+    position: absolute;
+    top: 178px;
+    left: 189px;
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50px;
+    
+    cursor: pointer;
+
+}
+
+html > body > main > content > activity > graphic > file-size-num0 {
+    position: absolute;
+    top: 178px;
+    left: 245px;
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50px;
+    
+    cursor: pointer;
+}
+
+html > body > main > content > activity > graphic > file-size-num-dot {
+    position: absolute;
+    top: 178px;
+    left: 301px;
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50px;
+    
+    cursor: pointer;
+}
+
+html > body > main > content > activity > graphic > file-size-num-clear {
+    position: absolute;
+    top: 178px;
+    left: 357px;
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50px;
+    
+    cursor: pointer;
+}
+
+html > body > main > content > activity > graphic > file-size-calculate {
+    position: absolute;
+    top: 120px;
+    left: 422px;
+    width: 104px;
+    height: 104px;
+
+    border-radius: 50px;
+    
+    cursor: pointer;
+}
+
+html > body > main > content > activity > graphic > speed-50mb-hour {
+    position: absolute;
+    top: 307px;
+    left: 208px;
+    width: 110px;
+    height: 45px;
+}
+
+html > body > main > content > activity > graphic > speed-50mb-minute {
+    position: absolute;
+    top: 307px;
+    left: 325px;
+    width: 110px;
+    height: 45px;
+}
+
+html > body > main > content > activity > graphic > speed-50mb-second {
+    position: absolute;
+    top: 307px;
+    left: 442px;
+    width: 110px;
+    height: 45px;
+}
+
+html > body > main > content > activity > graphic > speed-100mb-hour {
+    position: absolute;
+    top: 357px;
+    left: 208px;
+    width: 110px;
+    height: 45px;
+}
+
+html > body > main > content > activity > graphic > speed-100mb-minute {
+    position: absolute;
+    top: 357px;
+    left: 325px;
+    width: 110px;
+    height: 45px;
+}
+
+html > body > main > content > activity > graphic > speed-100mb-second {
+    position: absolute;
+    top: 357px;
+    left: 442px;
+    width: 110px;
+    height: 45px;  
+}
+
+html > body > main > content > activity > graphic > speed-200mb-hour {
+    position: absolute;
+    top: 407px;
+    left: 208px;
+    width: 110px;
+    height: 45px;
+}
+
+html > body > main > content > activity > graphic > speed-200mb-minute {
+    position: absolute;
+    top: 407px;
+    left: 325px;
+    width: 110px;
+    height: 45px;
+}
+
+html > body > main > content > activity > graphic > speed-200mb-second {
+    position: absolute;
+    top: 407px;
+    left: 442px;
+    width: 110px;
+    height: 45px;
+}
+
+html > body > main > content > activity > graphic > speed-500mb-hour {
+    position: absolute;
+    top: 457px;
+    left: 208px;
+    width: 110px;
+    height: 45px;
+}
+
+html > body > main > content > activity > graphic > speed-500mb-minute {
+    position: absolute;
+    top: 457px;
+    left: 325px;
+    width: 110px;
+    height: 45px;
+}
+
+html > body > main > content > activity > graphic > speed-500mb-second {
+    position: absolute;
+    top: 457px;
+    left: 442px;
+    width: 110px;
+    height: 45px;
+}
+
+html > body > main > content > activity > graphic > speed-1gb-hour {
+    position: absolute;
+    top: 507px;
+    left: 208px;
+    width: 110px;
+    height: 45px;
+}
+
+html > body > main > content > activity > graphic > speed-1gb-minute {
+    position: absolute;
+    top: 507px;
+    left: 325px;
+    width: 110px;
+    height: 45px;
+}
+
+html > body > main > content > activity > graphic > speed-1gb-second {
+    position: absolute;
+    top: 507px;
+    left: 442px;
+    width: 110px;
+    height: 45px;
+}
+
+html > body > main > footer {
+    display: flex;
+    align-items: center;
+}
+
+
+.speed {
+    padding-right: 7px;
+    width: 103px;
+
+    color: white;
+    font-size: 20px;
+
+    transition: all 0.5s ease;
+    
+    display: flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    align-items: center;
+}
+
+.filesize {
+    padding-right: 7px;
+    width: 202px;
+
+    font-size: 20px;
+
+    transition: all 0.5s ease; 
+
+    display: flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    align-items: center;
+}
